@@ -5,7 +5,7 @@ import api from "../api";
 import { useAuth } from "../auth";
 import type { Listing, Order, RecoveryJob, Notification as NotifType, BuyerRequirement, MatchResult } from "../types";
 import { LISTING_STATUSES, RECOVERY_STATUSES, humanise, categoryIcon } from "../types";
-import { formatPrice, formatWeight, formatDate, timeAgo } from "../utils";
+import { formatWeight, timeAgo } from "../utils";
 
 export default function Dashboard() {
   const { user } = useAuth();

@@ -1,10 +1,10 @@
 /* ── Requirements page & Create Requirement ── */
 import { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import api from "../api";
 import { useAuth } from "../auth";
 import type { BuyerRequirement } from "../types";
-import { MATERIAL_CATEGORIES, humanise, categoryIcon } from "../types";
+import { humanise, categoryIcon } from "../types";
 import { formatPrice, formatWeight, formatDate } from "../utils";
 
 export default function Requirements() {

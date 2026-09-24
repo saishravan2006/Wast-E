@@ -4,7 +4,7 @@ import api from "../api";
 import { useAuth } from "../auth";
 import type { Organisation, User as UserType, Dispute } from "../types";
 import { humanise } from "../types";
-import { formatDate, formatDateTime } from "../utils";
+import { formatDateTime } from "../utils";
 
 export default function AdminDashboard() {
   const { user } = useAuth();

@@ -2,9 +2,9 @@
 import { useState, useEffect } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import api from "../api";
-import type { Listing, PaginatedResponse } from "../types";
+import type { Listing } from "../types";
 import { MATERIAL_CATEGORIES, REJECTION_REASONS, LISTING_STATUSES, categoryIcon } from "../types";
-import { formatPrice, formatWeight, formatDate, humanise, timeAgo } from "../utils";
+import { formatPrice, formatWeight, humanise, timeAgo } from "../utils";
 
 export default function Browse() {
   const [searchParams, setSearchParams] = useSearchParams();

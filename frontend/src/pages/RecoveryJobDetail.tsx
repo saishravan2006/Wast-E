@@ -6,14 +6,14 @@ import api from "../api";
 import { useAuth } from "../auth";
 import type { RecoveryJob, TimelineEvent } from "../types";
 import { RECOVERY_STATUSES, humanise } from "../types";
-import { formatWeight, formatDate, formatDateTime } from "../utils";
+import { formatWeight, formatDateTime } from "../utils";
 
 export default function RecoveryJobDetail() {
   const { id } = useParams();
   const { user } = useAuth();
   const [job, setJob] = useState<RecoveryJob | null>(null);
   const [timeline, setTimeline] = useState<TimelineEvent[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [, setLoading] = useState(true);
 
   // Forms
   const [weightStage, setWeightStage] = useState("incoming");

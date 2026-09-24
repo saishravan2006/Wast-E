@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import api from "../api";
 import type { RecoveryJob } from "../types";
-import { RECOVERY_STATUSES, humanise } from "../types";
+import { RECOVERY_STATUSES } from "../types";
 import { formatWeight, formatDate } from "../utils";
 
 export default function RecoveryJobs() {
